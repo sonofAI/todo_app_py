@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;1,300;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #736B66;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #BBD94E;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: max-content;
+    font-size: 1.3rem;
+    margin-top: 30%;
+}
+
+.input {
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 4%;
+    margin: 20px 0;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.btn {
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 4%;
+    margin: 20px 0;
+    width: 100%;
+    cursor: pointer;
+    background-color: #868C5A;
+}
+
+.btn:hover {
+    background-color: #B0B7BF;
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: #c9ff06;
+}
+
+#title-div {
+    text-align: center;
+    margin: 20px 0;
+    padding: 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+#title {
+    border: none;
+    background-color: #736B66;
+    text-align: center;
+    padding: 0;
+    font-size: 1.7rem;
+}
+
+#title:focus {
+    outline: none;
+}
+
+#todos {
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+#todos p {
+    padding: 2%;
+}
+
+.checkboxes {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+#new-todo {
+    padding: 2%;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.9);
+    margin: 2%;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.del {
+    padding: 4% 4% 2% 4%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 3%;
+    background-color: #F24141;
+}
+
+.todo-items {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    background-color: #B0B7BF;
+    border-radius: 5px;
+    margin: 2% 0;
+    color: black;
+}
+
+.todo-items button {
+    margin-left: auto;
+}
+
+.todo-items p {
+    max-width: 80%;
+}
+
+@media (min-width: 700px) {
+    form {
+        margin-top: 50%;
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="https://kit.fontawesome.com/49f81c9f0a.js" crossorigin="anonymous"></script>
+    <title>TODO list</title>
+</head>
+<body>
+    <div id="title-div">
+        <input id="title" type="text" placeholder="Untitled">
+    </div>
+      
+    <div>
+        <h2>What's on your To-Do list?</h2>
+        <input id="new-todo" type="text" placeholder="e. g. take a shit..." autocomplete="off" autofocus> <br>
+        <button class="btn" id="add">Add TODO</button>
+    </div>
+
+    <div id="todos">
+        {% for todo in usrinfo %}
+            <div class="todo-items {{ todo['status'] }}">
+                <input type="checkbox" class="checkboxes">
+                <p>{{ todo["todo_item"] }}</p>
+                <button class="del"><i class="fa-solid fa-trash"></i></button>
+            </div>
+        {% endfor %}
+    </div>
+
+    <script src="static/index.js"></script>
+</body>
+</html>

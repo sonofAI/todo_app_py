@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>TODO_APP: register</title>
+</head>
+<body>
+    <form action="/register" method="post">
+        <h2>Register</h2>
+
+        <input type="text" name="username" id="username" class="input" autocomplete="off" autofocus placeholder="Username" required>
+        <label for="username">Username</label><br>
+
+        <input type="password" name="password" id="password" class="input" autocomplete="off" placeholder="Password" required>
+        <label for="password">Password</label><br>
+
+        <input type="password" name="password_conf" id="password_conf" class="input" autocomplete="off" placeholder="Confirm Password" required>
+        <label for="password_conf">Check</label><br>
+        
+        <button type="submit" class="btn">Register!</button>
+
+        <a href="login">Log in</a>
+    </form>
+</body>
+</html>
